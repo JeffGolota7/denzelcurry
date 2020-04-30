@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="This sentence will appear under the link in search engine results."
+    />
+    <meta
+      name="keywords"
+      content="list,of,words,separated,by,commas,that,describe,your,site"
+    />
+    <meta name="author" content="Your name goes here" />
+
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- shiv which should be a shim -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- tab title -->
+    <title>Denzel Curry | Gallery</title>
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/videos.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+
+    <!-- slicknav -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- Link to jQuery Content Delivery Network - Necessary for SlickNav to work correctly -->
+    <script src="js/jquery.slicknav.min.js"></script>
+    <!-- Link to the slicknav file inside the js folder - Necessary for SlickNav to work correctly -->
+
+    <!-- slicknav javascript - this javascript code will use the UL inside the nav_menu tag to build the same menu in slickNav format -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobilemenu" });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <img class="clearfix" />
+
+      <img class="logo" src="images/logo.png" />
+
+      <h3>Denzel Curry</h3>
+    </header>
+
+    <nav id="mobilemenu"></nav>
+    <nav id="nav_menu">
+      <ul>
+        <li><a href="index.html">Gallery</a></li>
+        <li><a href="index.html">Discography</a></li>
+        <li><a href="videos.html" id="current">Videos</a></li>
+        <li><a href="index.html">About</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <iframe
+        id="videos"
+        class="speedboat"
+        width="1120"
+        height="630"
+        src="https://www.youtube.com/embed/9GA5cDzYgYo"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <h2 id=captions" class="caption1">Music video for his song "Speedboat"</h2>
+      <iframe
+        id="videos"
+        class="ricky"
+        width="1120"
+        height="630"
+        src="https://www.youtube.com/embed/3WHm6tfvKlk"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <h2 id="captions" class="caption2">Music video for his song "Ricky"</h2>
+      <iframe
+        id="videos"
+        class="unlocked"
+        width="1120"
+        height="630"
+        src="https://www.youtube.com/embed/oyIrhGleD9M"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <h2 id="captions" class="caption3">Denzel's short film "Unlocked"</h2>
+    </main>
+
+    <footer>
+      <p>&copy; 2020 Jeff Golota</p>
+    </footer>
+  </body>
+</html>
